@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginwall"
+    android:foreground="@color/cardview_shadow_end_color"
+    tools:context=".service"
+    tools:ignore="ExtraText">
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="398dp"-->
+    <!--        android:layout_height="645dp"-->
+    <!--        tools:layout_editor_absoluteX="16dp"-->
+    <!--        tools:layout_editor_absoluteY="83dp">-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <TextView
+        android:id="@+id/txt8"
+        android:layout_width="215dp"
+        android:layout_height="46dp"
+
+
+        android:gravity="center"
+        android:text="Services"
+        android:textAlignment="center"
+
+
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="405dp"
+        android:layout_height="519dp"
+
+        android:background="@drawable/edittextborder"
+        app:cardBackgroundColor="@color/loginbox"
+        app:layout_constraintBottom_toTopOf="@+id/guideline18"
+        app:layout_constraintEnd_toStartOf="@+id/guideline17"
+        app:layout_constraintStart_toStartOf="@+id/guideline14"
+        app:layout_constraintTop_toTopOf="@+id/guideline19">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/vehicleno"
+            android:layout_width="342dp"
+            android:layout_height="51dp"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/formtextbox"
+
+            android:hint="VEHICLE NUMBER"
+
+            android:inputType="text"
+            android:paddingLeft="30dp"
+
+            android:textColor="@color/white"
+            android:textColorHint="@color/graylight"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.312"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txt2"
+            android:inputType="number"
+            android:layout_width="342dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="37dp"
+            android:background="@drawable/formtextbox"
+            android:ems="10"
+            android:hint="Driver Number"
+
+            android:paddingLeft="25dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/graylight"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt4"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/txt3"
+            android:layout_width="342dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="37dp"
+            android:background="@drawable/formtextbox"
+            android:ems="10"
+            android:hint="Data Renewal"
+            android:inputType="textPersonName"
+            android:paddingLeft="25dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/graylight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt1"
+            tools:ignore="MissingConstraints" />
+
+
+        <EditText
+            android:id="@+id/txt4"
+            android:layout_width="342dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginRight="37dp"
+            android:background="@drawable/formtextbox"
+            android:ems="10"
+            android:hint="Tax"
+
+            android:paddingLeft="25dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/graylight"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt5"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/txt5"
+            android:layout_width="342dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginRight="37dp"
+            android:background="@drawable/formtextbox"
+            android:ems="10"
+            android:hint="Pollution"
+            android:inputType="textPersonName"
+            android:paddingLeft="25dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/graylight"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt6"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/txt6"
+            android:layout_width="342dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="310dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/formtextbox"
+            android:ems="10"
+            android:hint="Fitness"
+            android:inputType="textPersonName"
+            android:paddingLeft="25dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/graylight"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt7"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/txt7"
+            android:layout_width="342dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="370dp"
+
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/formtextbox"
+            android:ems="10"
+            android:hint="Insurance Renewal"
+            android:inputType="textPersonName"
+            android:paddingLeft="25dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/graylight"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt3"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/dataimg"
+            android:layout_width="45dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="130dp"
+
+            app:layout_constraintEnd_toEndOf="@+id/txt3"
+            app:layout_constraintHorizontal_bias="0.992"
+            app:layout_constraintStart_toStartOf="@+id/txt3"
+            app:layout_constraintTop_toBottomOf="@+id/txt1"
+            app:srcCompat="@drawable/calendd"
+            tools:ignore="InvalidId" />
+
+        <ImageView
+            android:id="@+id/insuranceimg"
+            android:layout_width="51dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="370dp"
+            app:layout_constraintEnd_toEndOf="@+id/txt7"
+            app:layout_constraintHorizontal_bias="0.992"
+            app:layout_constraintStart_toStartOf="@+id/txt7"
+            app:layout_constraintTop_toBottomOf="@+id/txt3"
+            app:srcCompat="@drawable/calendd" />
+
+        <ImageView
+            android:id="@+id/fitnesimg"
+            android:layout_width="51dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="310dp"
+            app:layout_constraintEnd_toEndOf="@+id/txt6"
+            app:layout_constraintHorizontal_bias="0.992"
+            app:layout_constraintStart_toStartOf="@+id/txt6"
+            app:layout_constraintTop_toBottomOf="@+id/txt7"
+            app:srcCompat="@drawable/calendd" />
+
+        <ImageView
+            android:id="@+id/pollutionimg"
+            android:layout_width="51dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="250dp"
+            app:layout_constraintEnd_toEndOf="@+id/txt5"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/txt5"
+            app:layout_constraintTop_toTopOf="@+id/txt5"
+            app:srcCompat="@drawable/calendd" />
+
+
+        <ImageView
+            android:id="@+id/taximg"
+            android:layout_width="51dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="190dp"
+            app:layout_constraintEnd_toEndOf="@+id/txt4"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/txt4"
+            app:layout_constraintTop_toTopOf="@+id/txt4"
+            app:srcCompat="@drawable/calendd" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="126dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="440dp"
+            android:background="@drawable/loginbuttonstyle"
+            android:text="Save"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="103dp"
+            tools:layout_editor_absoluteY="619dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+
+        tools:ignore="UnknownId" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.99" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

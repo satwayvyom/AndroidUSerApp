@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:forceDarkAllowed="true"
+    android:background="@color/Gray"
+    tools:context=".Home">
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView7"
+        android:layout_width="390dp"
+        android:layout_height="710dp"
+        android:background="@color/cardview_shadow_end_color"
+        app:layout_constraintBottom_toTopOf="@+id/guideline15"
+        app:layout_constraintEnd_toStartOf="@+id/guideline13"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/guideline16">
+
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:forceDarkAllowed="true" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/menu"
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="620dp"
+
+            android:background="@drawable/dash"
+            android:backgroundTint="@color/yellow1"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:padding="8dp"
+            android:src="@drawable/menu"
+            app:elevation="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/map"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.957"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <View
+            android:id="@+id/blurview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:background="#000000"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/logoutbtnlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="550dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/logoutbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:background="@drawable/textbox"
+                android:backgroundTint="@color/yellow1"
+
+                android:gravity="center"
+                android:onClick="logout"
+                android:padding="5dp"
+                android:src="@drawable/logout1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/logoutbtntext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="logout"
+                android:width="100dp"
+                android:background="@drawable/textbox"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Logout"
+
+                android:textAlignment="center"
+
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dashboardlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="160dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/dashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/yellow1"
+
+                android:onClick="switchactivity"
+                android:src="@drawable/dash" />
+
+            <TextView
+                android:id="@+id/dashboardtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:width="100dp"
+                android:onClick="switchactivity"
+                android:background="@drawable/textbox"
+                android:gravity="center"
+                android:clickable="true"
+                android:padding="5dp"
+                android:text="Dashboard"
+                android:textAlignment="center"
+
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/allvehiclelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="225dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/allvehicle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/yellow1"
+                android:clickable="true"
+                android:onClick="livetracking"
+                android:src="@drawable/cc" />
+
+            <TextView
+                android:id="@+id/allvehicletext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:width="100dp"
+                android:background="@drawable/textbox"
+                android:gravity="center"
+                android:clickable="true"
+                android:padding="5dp"
+                android:text="All Vehicles"
+                android:textAlignment="center"
+
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/livetrackinglayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="290dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/livetracking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/yellow1"
+                android:clickable="true"
+                android:onClick="vehiclechange"
+                android:src="@drawable/cab" />
+
+            <TextView
+                android:id="@+id/livetrackingtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:width="100dp"
+                android:background="@drawable/textbox"
+                android:gravity="center"
+                android:clickable="true"
+                android:padding="5dp"
+                android:text="Live Tracking"
+                android:textAlignment="center"
+
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/historylayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="355dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/yellow1"
+                android:clickable="true"
+
+                android:elevation="6dp"
+                android:onClick="alertactivity"
+                android:src="@drawable/his" />
+
+            <TextView
+                android:id="@+id/historytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:width="100dp"
+                android:background="@drawable/textbox"
+                android:gravity="center"
+                android:padding="5dp"
+                android:clickable="true"
+                android:text="History"
+                android:textAlignment="center"
+
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/serviceslayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="420dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/yellow1"
+                android:clickable="true"
+                android:onClick="serviceactivity"
+                android:src="@drawable/techhh" />
+
+            <TextView
+                android:id="@+id/servicestext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:width="100dp"
+                android:background="@drawable/textbox"
+                android:gravity="center"
+                android:padding="5dp"
+                android:clickable="true"
+                android:text="Services"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contactuslayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="485dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/contactus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/yellow1"
+                android:clickable="true"
+                android:onClick="contactactivity"
+                android:src="@drawable/callll" />
+
+            <TextView
+                android:id="@+id/contactustext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:width="100dp"
+                android:background="@drawable/textbox"
+                android:gravity="center"
+                android:clickable="true"
+                android:padding="5dp"
+                android:text="Contact Us"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.99" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.99" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/lightblack"/>
+    <corners android:radius="8dp"/>
+
+    <item android:state_checked="true">
+
+    </item>
+
+    <solid android:color="@color/blue">
+
+    </solid>
+
+    <item android:state_checked="false">
+        <solid android:color="@color/bloodred">
+
+        </solid>
+
+    </item>
+
+</shape>

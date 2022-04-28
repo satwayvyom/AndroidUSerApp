@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/loginwall"
+    tools:context=".Contact_us">
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/phno"-->
+    <!--        android:layout_width="398dp"-->
+    <!--        android:layout_height="121dp"-->
+    <!--        android:layout_marginStart="10dp"-->
+    <!--        android:layout_marginLeft="10dp"-->
+    <!--        android:layout_marginTop="107dp"-->
+    <!--        android:layout_marginEnd="3dp"-->
+    <!--        android:layout_marginRight="3dp"-->
+    <!--        android:digits="1234567890"-->
+    <!--        android:hint="Enter Phone number"-->
+    <!--        android:inputType="phone"-->
+    <!--        android:maxLength="10"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textColorHint="@color/YellowGreen"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView"-->
+    <!--        tools:ignore="MissingConstraints">-->
+
+    <!--    </EditText>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textphn"-->
+    <!--        android:layout_width="384dp"-->
+
+    <!--        android:layout_height="36dp"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+
+    <!--        android:layout_marginStart="13dp"-->
+    <!--        android:layout_marginLeft="13dp"-->
+    <!--        android:layout_marginTop="28dp"-->
+    <!--        android:layout_marginEnd="14dp"-->
+    <!--        android:layout_marginRight="14dp"-->
+    <!--        android:text="7510688888"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="25dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView4">-->
+
+    <!--    </TextView>-->
+
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/btnphone"-->
+    <!--        android:layout_width="76dp"-->
+    <!--        android:layout_height="69dp"-->
+    <!--        android:layout_marginStart="167dp"-->
+    <!--        android:layout_marginLeft="167dp"-->
+    <!--        android:layout_marginEnd="168dp"-->
+    <!--        android:layout_marginRight="168dp"-->
+    <!--        android:layout_marginBottom="151dp"-->
+    <!--        android:background="@color/black"-->
+    <!--        android:src="@drawable/ph1"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        tools:ignore="MissingConstraints">-->
+
+    <!--    </ImageButton>-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+
+        android:layout_marginTop="136dp"
+        android:gravity="center"
+        android:text="CONTACT US"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline50"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,UnknownId" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="397dp"
+        android:layout_height="228dp"
+
+        android:layout_marginBottom="128dp"
+        android:background="@color/loginbox"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.27">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/phoneno"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="409dp"
+
+        android:layout_height="41dp"
+        android:layout_gravity="center"
+
+        android:gravity="center"
+        android:text="support@satway.in"
+        android:textAlignment="center"
+        android:textColor="@color/graylight"
+        android:textSize="15dp"
+
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <!--    <pl.droidsonroids.gif.GifImageView-->
+    <!--        android:id="@+id/carimgerun"-->
+    <!--        android:layout_width="143dp"-->
+    <!--        android:layout_height="69dp"-->
+
+    <!--        android:src="@drawable/runcar"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/textView4"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/frameLayout"-->
+    <!--        app:layout_constraintVertical_bias="1.0"-->
+    <!--        tools:ignore="MissingConstraints"></pl.droidsonroids.gif.GifImageView>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

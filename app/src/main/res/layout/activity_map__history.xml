@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Map_History">
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/radiogrp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:checkedButton="@id/medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039">
+
+        <RadioButton
+            android:id="@+id/slow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Slow"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Medium"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/fast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Fast"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="108dp"
+        android:layout_height="170dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="@+id/map"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/abc"
+            android:layout_width="79dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:text="Satellite"
+            android:textColor="@color/black"
+            tools:ignore="NotSibling" />
+
+        <Button
+            android:id="@+id/normalbtn"
+            android:layout_width="79dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:background="@color/yellow"
+            android:text="Normal"
+            android:textColor="@color/black"
+            tools:ignore="NotSibling" />
+
+        <Button
+            android:id="@+id/terrainbtn"
+            android:layout_width="79dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="544dp"
+            android:background="@color/white"
+            android:text="Terrain"
+            android:textColor="@color/black"
+            tools:ignore="NotSibling,UnknownId" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

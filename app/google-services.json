@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "65546061302",
+    "project_id": "gps-trackersatway",
+    "storage_bucket": "gps-trackersatway.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65546061302:android:f0bbcbde4bbe3d61dff3d7",
+        "android_client_info": {
+          "package_name": "com.vyom.gpstrackersatway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65546061302-ss0ebecfaa03j336gv8mvjmlf11nguhm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-PjrBr8SLkxBCo8wUfLng0Z4048Iz8YA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65546061302-ss0ebecfaa03j336gv8mvjmlf11nguhm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

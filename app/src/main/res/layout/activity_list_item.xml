@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="15dp"
+    app:layout_constraintCircleRadius="2dp"
+    android:background="@color/loginwall">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="156dp"
+        android:layout_height="108dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="242dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+         android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="262dp"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="35dp"
+
+        android:background="@drawable/loginboxstyle"
+        android:text="Running"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/loginboxstyle"
+        android:text="Stopped"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

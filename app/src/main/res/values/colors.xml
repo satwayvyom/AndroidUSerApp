@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#DB4437</color>
+    <color name="yellow">#F4B400</color>
+    <color name="Greens">#1C0A6E</color>
+    <color name="purple">#bf00ff</color>
+    <color name="redblack">#b34d4d</color>
+    <color name="skyblue"> #53ffff</color>
+    <color name="pink"> #ff0080</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="Gray">#1C1B1C</color>
+    <color name="Green">#9EAE05</color>
+    <color name="darkpink">#EE930838</color>
+    <color name="graylight">#EE858283</color>
+    <color name="lightblack">#EE03163C</color>
+    <color name="blk">#F7100F0F</color>
+    <color name="blue">#EE052581</color>
+    <color name="bloodred">#FF0404</color>
+    <color name="darkgreen">#2EB022</color>
+    <color name="purple1">#581ABB</color>
+    <color name="violet">#361D71</color>
+    <color name="yellow1">#FFD700</color>
+    <color name="yellow2">#856433</color>
+    <color name="bgpurple">#411754</color>
+    <color name="buttonborder">#982FEE</color>
+    <color name="loginwall">#060817</color>
+    <color name="buttonbg">#E1D962</color>
+    <color name="loginbox">#191E3A</color>
+    <color name="edittestborder">#060818</color>
+</resources>
